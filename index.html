@@ -17,8 +17,23 @@
     <link rel="stylesheet" href="style.css" />
 
     <style>
-        #gameDiv {
+        /*  #gameDiv {
             overflow: hidden !important;
+        } */
+        
+        html,
+        body {
+            height: 100%;
+            overflow: hidden !important;
+        }
+        
+        #gameDiv {
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: auto !important;
         }
     </style>
 </head>
@@ -32,7 +47,7 @@
     </div>
 
 
-    <section id="gameDiv"></section>
+    <div id="gameDiv"></div>
     <!--  <div class="checkfont" id="checkfont">
         <p id='setcheckfont'>0</p>
     </div> -->
